@@ -23,6 +23,8 @@ We provide the R scripts for the paper "Predicting 72-Hour and 9-Day Return to t
 
 * **build_importance_ci_revisit.R**, **build_importance_ci_revisit_3day.R**: Trains the XGBoost model built on the full dataset 100 times to get the average information gain for each variable.
 
+* **build_model_revisit_top20.R**, **build_model_revisit_top20_3day.R**, **build_model_revisit_final_top20.R**, **build_model_revisit_final_top20_3day.R**: Repeats the training and testing steps for XGBoost models using the top 20 variables by information gain, including *n_edvisits*, *n_admissions*, *cxr_count*, *ekg_count*, *alcoholrelateddisorders* ... etc.
+
 
 ##### Files in */Scripts*
 ###### All processing descriptions apply to each patient visit (i.e. by row) unless specified otherwise.
@@ -53,3 +55,5 @@ We provide the R scripts for the paper "Predicting 72-Hour and 9-Day Return to t
 * **splitdataindex_revisit.R**: Returns a list of random splits (seeded for reproducibility), with a held out test set of 33,000 (10%), a validation set of 33,000 (10%) and a training set of 264,631 (80%).
 
 * **baseline_df.R**: A filtering function called by models only using administrative data.
+
+* **top20_df.R**,  **top20_df_3day.R**,: A filtering function called by models only using the top 20 variables by information gain
