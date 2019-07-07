@@ -1,7 +1,7 @@
 # Predicting 72-Hour and 9-Day Return to the Emergency Department Using Machine Learning
 #### Woo Suk Hong, Adrian Haimovich, R. Andrew Taylor
 
-We provide the R scripts for the paper "Predicting 72-Hour and 9-Day Return to the Emergency Department Using Machine Learning", published in July 2019 in JAMIA Open (https://doi.org/10.1093/jamiaopen/ooz019). All processing scripts in the */Scripts* subdirectory take as input *.csv* files extracted from the enterprise data warehouse using SQL queries and the original master dataframe used in our prior study of predicting hospital admission at triage. The analysis scripts in the main directory take as input the output of **master_revisit.R**.
+We provide the R scripts for the paper "Predicting 72-Hour and 9-Day Return to the Emergency Department Using Machine Learning", published in July 2019 in JAMIA Open (https://doi.org/10.1093/jamiaopen/ooz019). All processing scripts in the */Scripts* subdirectory take as input *.csv* files extracted from the enterprise data warehouse using SQL queries and the original master dataframe used in our prior study of predicting hospital admission at triage (https://github.com/yaleemmlc/admissionprediction). The analysis scripts in the main directory take as input the output of **master_revisit.R**.
 
 ##### Pipeline and Analysis Scripts
 
